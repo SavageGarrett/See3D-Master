@@ -22,20 +22,20 @@
     <!-- Theme CSS -->
     <link href="css/grayscale.min.css" rel="stylesheet">
 
-	<!-- Added CSS -->
-	<link href="css/index.css" rel="stylesheet">
-	<link href="css/slides.css" rel="stylesheet">
-	
+  	<!-- Added CSS -->
+  	<link href="css/index.css" rel="stylesheet">
+  	<link href="css/slides.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
+
 	<!-- Added Scripts -->
 	<script src="js/slides.js"></script>
-	
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -64,10 +64,10 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Volunteer</a>
+                        <a class="page-scroll" href="#volunteer">Volunteer</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Impact</a>
+                        <a class="page-scroll" href="#impact">Impact</a>
                     </li>
                 </ul>
             </div>
@@ -88,7 +88,7 @@
 					<div class="slideshow-container">
 
 						<div class="mySlides">
-						  <img src="img_refactor/cassandra_feeling_castle.JPG" style="    
+						  <img alt="Image of woman holding a 3D model of a castle" src="img_refactor/cassandra_feeling_castle.jpg" style="
 							display: block;
 							margin-left: auto;
 							margin-right: auto;
@@ -97,7 +97,7 @@
 						</div>
 
 						<div class="mySlides">
-						  <img src="img_refactor/haley_cell_model.jpg" style="    display: block;
+						  <img alt="Image of girl holding a 3D model of a cell" src="img_refactor/haley_cell_model.jpg" style="    display: block;
 							margin-left: auto;
 							margin-right: auto;
 							width: 70%;">
@@ -105,32 +105,33 @@
 						</div>
 
 						<div class="mySlides">
-						  <img src="img_refactor/adults_holding_models.JPG" style="    display: block;
+						  <img alt="Image of group of blind adults holding 3D models" src="img_refactor/adults_holding_models.JPG" style="    display: block;
 							margin-left: auto;
 							margin-right: auto;
 							width: 70%;">
 						</div>
 						<div class="mySlides">
-						  <img src="img_refactor/children_feeling_models.JPG" style="    display: block;
+						  <img alt="Image of blind children feeling 3D models" src="img_refactor/children_feeling_models.JPG" style="    display: block;
 							margin-left: auto;
 							margin-right: auto;
 							width: 70%;">
 						</div>
 						<div class="mySlides">
-						  <img src="img_refactor/children_feeling_models2.JPG" style="    display: block;
+						  <img alt="Image of blind children holding 3D models" src="img_refactor/children_feeling_models2.JPG" style="    display: block;
 							margin-left: auto;
 							margin-right: auto;
 							width: 70%;">
 						</div>
 						<div class="mySlides">
-						  <img src="img_refactor/model_minion.jpeg" style="    display: block;
+						  <img alt="Image of some 3D models of minnions from the movie despicable me" src="img_refactor/model_minion.jpeg" style="    display: block;
 							margin-left: auto;
 							margin-right: auto;
 							width: 70%;">
 						</div>
 
-						<div class="mySlides fade">
-						  <img src="img_refactor/castle_large_model.JPG" style="    display: block;
+						<div class="mySlides">
+						  <img alt="Image of a large 3D model of a castle" src="img_refactor/castle_large_model.JPG" style="
+              display: block;
 							margin-left: auto;
 							margin-right: auto;
 							width: 70%;">
@@ -142,20 +143,20 @@
 						<br>
 						<br>
 						<div style="text-align:center">
-							<span class="dot" onclick="currentSlide(1)"></span> 
-							<span class="dot" onclick="currentSlide(2)"></span> 
+							<span class="dot" onclick="currentSlide(1)"></span>
+							<span class="dot" onclick="currentSlide(2)"></span>
 							<span class="dot" onclick="currentSlide(3)"></span>
 							<span class="dot" onclick="currentSlide(4)"></span>
 							<span class="dot" onclick="currentSlide(5)"></span>
 							<span class="dot" onclick="currentSlide(6)"></span>
-							<span class="dot" onclick="currentSlide(7)"></span> 
+							<span class="dot" onclick="currentSlide(7)"></span>
 						</div>
 						<div class="article-padding"></div>
 						<hr>
 						<script>
 						var slideIndex = 1;
 						showSlides(slideIndex);
-						
+
 						function plusSlides(n) {
 						  showSlides(slideIndex += n);
 						}
@@ -168,15 +169,15 @@
 						  var i;
 						  var slides = document.getElementsByClassName("mySlides");
 						  var dots = document.getElementsByClassName("dot");
-						  if (n > slides.length) {slideIndex = 1}    
+						  if (n > slides.length) {slideIndex = 1}
 						  if (n < 1) {slideIndex = slides.length}
 						  for (i = 0; i < slides.length; i++) {
-							  slides[i].style.display = "none";  
+							  slides[i].style.display = "none";
 						  }
 						  for (i = 0; i < dots.length; i++) {
 							  dots[i].className = dots[i].className.replace(" active", "");
 						  }
-						  slides[slideIndex-1].style.display = "block";  
+						  slides[slideIndex-1].style.display = "block";
 						  dots[slideIndex-1].className += " active";
 						}
 						</script>
@@ -204,7 +205,7 @@
             </div>
         </div>
     </section>
-	
+
     <!-- About Section -->
     <section id="about" class="container content-section text-center section-padding-change">
         <div class="row">
@@ -218,26 +219,26 @@
         </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center section-padding-change">
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="content-section text-center section-padding-change">
         <!-- <div class="download-section"> -->
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Calling all Volunteers</h2>
                     <p>We always need help printing items to send out. Here are the most popular models that we need:</p>
 					<p>Cells,
-					
+
 					protien carrier molecules,
-					
+
 					The Statue of Liberty,
-					
+
 					castles, and
-					
+
 					insects. You can find designs on thingiverse.com.
 					</p>
 					<p>If you have any questions, don't hesitate to contact us at:</p>
 					<p><a href="mailto:info@see3d.org">info@see3d.org</a></p>
-					 
+
 					<div class="button-box">
 						<a href="https://www.gofundme.com/see3d" class="btn btn-default btn-lg">Visit GoFundMe Page</a>
 					</div>
@@ -247,14 +248,14 @@
             </div>
         <!-- </div> -->
     </section>
-	
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center section-padding-change">
+
+    <!-- Impact Section -->
+    <section id="impact" class="container content-section text-center section-padding-change">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Impact and News</h2>
                 <p>Check out some articles that spotlight this unique 3D printing iniative.</p>
-				
+
 				<a href="https://blindabilities.com/bapresents/see3d-understanding-through-3d-imagery-meet-caroline-karbowski/" target="_blank" class="btn btn-default btn-lg first-article-spacing">Blind Abilities</a>
 				<a href="http://www.afb.org/afbpress/pubnew.asp/?DocID=aw180906" target="_blank" class="btn btn-default btn-lg article-spacing">AccessWorld</a>
 				<a href="https://www.summitcds.org/communications/news/1171378/summit-juniors-project-earns-ge-grant-for-3d-printers-for-school" target="_blank" class="btn btn-default btn-lg article-spacing">Summit District</a>
@@ -269,7 +270,7 @@
 
     <!-- Footer -->
     <footer>
-        
+
     </footer>
 
     <!-- jQuery -->
@@ -283,7 +284,7 @@
 
     <!-- Theme JavaScript -->
     <script src="js/grayscale.min.js"></script>
-	
+
 	</div>
 </body>
 

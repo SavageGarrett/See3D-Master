@@ -32,6 +32,14 @@
 	padding-top: 0px;
 }
 
+.navbar-custom .nav li a:hover {
+  background-color: #7cc8ff;
+}
+
+.top-nav-collapse .nav li a:hover {
+  background-color: black;
+}
+
 .reset-this {
     animation : none;
     animation-delay : 0;
