@@ -38,7 +38,7 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top">
 
     <!-- Navigation -->
 	<div id="page-child">
@@ -56,10 +56,6 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
@@ -83,58 +79,86 @@
                 <div class="row row-spacing">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">See3D</h1>
-                        <p class="intro-text">A community-driven effort to bring 3D printed models into the hands of the blind and low vision.</p>
+                        <p class="intro-text">A community-driven effort to bring
+                          3D printed models into the hands of the blind and low vision.</p>
                     </div>
 					<div class="slideshow-container">
+						<div class="mySlides">
+              <!-- Put image inside a frame -->
+              <div class="slide-image-box">
+                <img alt="See3D homepage" src="img_refactor/See3D_edited.jpg" style="
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: 336px;
+                width: 70%;">
+              </div>
+            </div>
 
 						<div class="mySlides">
-						  <img alt="Image of woman holding a 3D model of a castle" src="img_refactor/cassandra_feeling_castle.jpg" style="
-							display: block;
-							margin-left: auto;
-							margin-right: auto;
-							width: 70%;">
-
+              <div class="slide-image-box">
+                <img alt="Image of woman holding a 3D model of a castle"
+                  src="img_refactor/cassandra_feeling_castle.jpg" style="
+    							display: block;
+    							margin-left: auto;
+    							margin-right: auto;
+    							width: 70%;">
+              </div>
 						</div>
 
 						<div class="mySlides">
-						  <img alt="Image of girl holding a 3D model of a cell" src="img_refactor/haley_cell_model.jpg" style="    display: block;
-							margin-left: auto;
-							margin-right: auto;
-							width: 70%;">
-
+              <div class="slide-image-box">
+  						  <img alt="Image of group of blind adults holding 3D models"
+                  src="img_refactor/adults_holding_models.JPG" style="
+                  display: block;
+    							margin-left: auto;
+    							margin-right: auto;
+    							width: 70%;">
+              </div>
 						</div>
 
 						<div class="mySlides">
-						  <img alt="Image of group of blind adults holding 3D models" src="img_refactor/adults_holding_models.JPG" style="    display: block;
-							margin-left: auto;
-							margin-right: auto;
-							width: 70%;">
-						</div>
-						<div class="mySlides">
-						  <img alt="Image of blind children feeling 3D models" src="img_refactor/children_feeling_models.JPG" style="    display: block;
-							margin-left: auto;
-							margin-right: auto;
-							width: 70%;">
-						</div>
-						<div class="mySlides">
-						  <img alt="Image of blind children holding 3D models" src="img_refactor/children_feeling_models2.JPG" style="    display: block;
-							margin-left: auto;
-							margin-right: auto;
-							width: 70%;">
-						</div>
-						<div class="mySlides">
-						  <img alt="Image of some 3D models of minnions from the movie despicable me" src="img_refactor/model_minion.jpeg" style="    display: block;
-							margin-left: auto;
-							margin-right: auto;
-							width: 70%;">
+              <div class="slide-image-box">
+  						  <img alt="Image of blind children feeling 3D models"
+                  src="img_refactor/children_feeling_models.JPG" style="
+                  display: block;
+    							margin-left: auto;
+    							margin-right: auto;
+    							width: 70%;">
+              </div>
 						</div>
 
 						<div class="mySlides">
-						  <img alt="Image of a large 3D model of a castle" src="img_refactor/castle_large_model.JPG" style="
-              display: block;
-							margin-left: auto;
-							margin-right: auto;
-							width: 70%;">
+              <div class="slide-image-box">
+  						  <img alt="Image of blind children holding 3D models"
+                  src="img_refactor/children_feeling_models2.JPG" style="
+                  display: block;
+    							margin-left: auto;
+    							margin-right: auto;
+    							width: 70%;">
+              </div>
+						</div>
+
+						<div class="mySlides">
+              <div class="slide-image-box">
+  						  <img alt="Image of some 3D models of minnions from the movie despicable me"
+                  src="img_refactor/model_minion.jpeg" style="
+                  display: block;
+    							margin-left: auto;
+    							margin-right: auto;
+    							width: 70%;">
+              </div>
+						</div>
+
+						<div class="mySlides">
+              <div class="slide-image-box">
+                <img alt="Image of girl holding a 3D model of a cell"
+                  src="img_refactor/haley_cell_model.jpg" style="
+                  display: block;
+    							margin-left: auto;
+    							margin-right: auto;
+    							width: 70%;">
+              </div>
 						</div>
 
 						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -153,66 +177,27 @@
 						</div>
 						<div class="article-padding"></div>
 						<hr>
-						<script>
-						var slideIndex = 1;
-						showSlides(slideIndex);
-
-						function plusSlides(n) {
-						  showSlides(slideIndex += n);
-						}
-
-						function currentSlide(n) {
-						  showSlides(slideIndex = n);
-						}
-
-						function showSlides(n) {
-						  var i;
-						  var slides = document.getElementsByClassName("mySlides");
-						  var dots = document.getElementsByClassName("dot");
-						  if (n > slides.length) {slideIndex = 1}
-						  if (n < 1) {slideIndex = slides.length}
-						  for (i = 0; i < slides.length; i++) {
-							  slides[i].style.display = "none";
-						  }
-						  for (i = 0; i < dots.length; i++) {
-							  dots[i].className = dots[i].className.replace(" active", "");
-						  }
-						  slides[slideIndex-1].style.display = "block";
-						  dots[slideIndex-1].className += " active";
-						}
-						</script>
 					</div>
                 </div>
             </div>
         </div>
     </header>
 
-	<section id="model-request" class="container content-section text-center reset-top-padding">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Request a Model Today</h2>
-                <p>See3D is designed to connect people who enjoy 3D printing with their visually impaired neighbors. Teachers, family, and low vision and blind students can request models to give new meaning to words that some students have never been able to understand. Sighted people all over Cincinnati can help this project come to life by printing requested designs and shipping them free to the blind and low vision individuals. The See3D effort has expanded beyond Cincinnati. We are reaching people in New York, Indiana, Michigan, and even across the world in Kyrgyzstan. </p>
-                <p>We hope to make See3D a go-to resource for the visually impaired everywhere.</p>
-				<div class="article-padding"></div>
-					<div class="button-box">
-						<a href="https://docs.google.com/forms/d-5PhQt7Y8yjyExeCJJnRkXouMeuoiG3La7725Fr8Y" class="btn btn-default btn-lg"> New to See3D? Request a model here</a>
-					</div>
-					<div class="button-box">
-						<a href="https://docs.google.com/for/1T_IZSG8xSuFZII14BuFrcW3emLXWwdhSfF-2LPXzHc4" class="btn btn-default btn-lg"> Returning users request models here </a>
-					</div>
-					<div class="article-padding"></div>
-                <hr>
-            </div>
-        </div>
-    </section>
-
     <!-- About Section -->
     <section id="about" class="container content-section text-center section-padding-change">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About Our Project</h2>
-                <p>See3D is designed to connect people who enjoy 3D printing with their visually impaired neighbors. Teachers, family, and low vision and blind students can request models to give new meaning to words that some students have never been able to understand. Sighted people all over Cincinnati can help this project come to life by printing requested designs and shipping them free to the blind and low vision individuals. The See3D effort has expanded beyond Cincinnati. We are reaching people in New York, Indiana, Michigan, and even across the world in Kyrgyzstan. </p>
+                <p>See3D is designed to connect people who enjoy 3D printing with their visually impaired neighbors.
+                  Low vision and blind individuals can request models to give new meaning to words that some students have never been able to understand.
+                  Our mission at See3D is to not only distribute these models, but is also push forward the education for blind individuals.
+                  If you would like to support our mission, you can donate to our GoFundMe
+                  <a href="https://www.gofundme.com/see3d"> Here</a>.
+                </p>
                 <p>We hope to make See3D a go-to resource for the visually impaired everywhere.</p>
+                <div class="button-box">
+                  <a href="https://www.gofundme.com/see3d" class="btn btn-default btn-lg" id="goFundMe" onclick="unFocus('goFundMe')">More About Us</a>
+                </div>
 				<div class="article-padding"></div>
                 <hr>
             </div>
@@ -225,46 +210,59 @@
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Calling all Volunteers</h2>
-                    <p>We always need help printing items to send out. Here are the most popular models that we need:</p>
-					<p>Cells,
-
-					protien carrier molecules,
-
-					The Statue of Liberty,
-
-					castles, and
-
-					insects. You can find designs on thingiverse.com.
-					</p>
-					<p>If you have any questions, don't hesitate to contact us at:</p>
-					<p><a href="mailto:info@see3d.org">info@see3d.org</a></p>
-
-					<div class="button-box">
-						<a href="https://www.gofundme.com/see3d" class="btn btn-default btn-lg">Visit GoFundMe Page</a>
-					</div>
-					<div class="article-padding"></div>
-					<hr>
-				</div>
+                    <p>We always need help printing items to send out.</p>
+          					<p>If you are willing to donate old 3D prints, print objects for us,
+                      or have 3D modeling abilities, contact us at
+                      <a href="mailto:info@see3d.org">info@see3d.org</a>.
+                      We greatly appreciate all the help we can get.
+                    </p>
+          					<div class="article-padding"></div>
+          					<hr>
+      				    </div>
             </div>
         <!-- </div> -->
     </section>
+
+    <section id="model-request" class="container content-section text-center reset-top-padding">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                  <div class="article-padding"></div>
+                  <h2>Request a Model Today</h2>
+                  <p>If you have previously requested a model, we ask that you only request a maximum of one model per week. Model requests that are suspected to be non-legitmate are subject to be cancelled.</p>
+                  <p>If you would like to request a model today, follow the links below to start the process of requesting a model.</p>
+        					<div class="button-box">
+        						<a href="https://goo.gl/forms/utZh2VDY9EFYiwu32" target="_blank" class="btn btn-default btn-lg" id="requestButton" onclick="unFocus('requestButton')">Request a Model</a>
+        					</div>
+  					      <div class="article-padding"></div>
+                  <hr>
+              </div>
+          </div>
+      </section>
 
     <!-- Impact Section -->
     <section id="impact" class="container content-section text-center section-padding-change">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Impact and News</h2>
-                <p>Check out some articles that spotlight this unique 3D printing iniative.</p>
+              <h2>Impact and News</h2>
+              <p>Check out some articles that spotlight See3D.</p>
 
-				<a href="https://blindabilities.com/bapresents/see3d-understanding-through-3d-imagery-meet-caroline-karbowski/" target="_blank" class="btn btn-default btn-lg first-article-spacing">Blind Abilities</a>
-				<a href="http://www.afb.org/afbpress/pubnew.asp/?DocID=aw180906" target="_blank" class="btn btn-default btn-lg article-spacing">AccessWorld</a>
-				<a href="https://www.summitcds.org/communications/news/1171378/summit-juniors-project-earns-ge-grant-for-3d-printers-for-school" target="_blank" class="btn btn-default btn-lg article-spacing">Summit District</a>
-				<!--
-				<a href="www.local.cincinnati.com/share/story/246508" class="btn btn-default btn-lg">Cincinnati local story</a><hr>
-				-->
-				<div class="article-padding"></div>
-				<hr>
-			</div>
+              <a href="https://blindabilities.com/?p=2957" target="_blank"
+                class="btn btn-default btn-lg first-article-spacing" id="blindAbil"
+                onclick="unFocus('blindAbil')">Blind Abilities</a>
+				      <a href="http://www.afb.org/afbpress/pubnew.asp/?DocID=aw180906"
+                target="_blank" class="btn btn-default btn-lg article-spacing" id="accessWorld"
+                onclick="unFocus('accessWorld')">AccessWorld</a>
+			        <a href="https://www.summitcds.org/communications/news/1171378/summit-juniors-project-earns-ge-grant-for-3d-printers-for-school"
+                target="_blank" class="btn btn-default btn-lg article-spacing" id="summitDistrict"
+                onclick="unFocus('summitDistrict')">Summit District</a>
+      				<!--
+      				<a href="www.local.cincinnati.com/share/story/246508" class="btn btn-default btn-lg"
+                id="cincinnatiLocal" onclick="unFocus('cincinnatiLocal')">Cincinnati local story</a><hr>
+              TODO find new article link
+      				-->
+      				<div class="article-padding"></div>
+      				<hr>
+			     </div>
         </div>
     </section>
 
@@ -272,6 +270,8 @@
     <footer>
 
     </footer>
+
+    <script src="./js/util.js" type="text/javascript"></script>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.js"></script>

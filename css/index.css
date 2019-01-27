@@ -40,6 +40,20 @@
   background-color: black;
 }
 
+.btn-default:focus, .btn-default:active {
+	border: 5px solid #7cc8ff;
+	color: #7cc8ff;
+	background-color: transparent;
+}
+
+#about {
+	padding-top: 0;
+}
+
+a:hover {
+	color: white;
+}
+
 .reset-this {
     animation : none;
     animation-delay : 0;
