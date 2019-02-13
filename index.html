@@ -23,8 +23,9 @@
     <link href="css/grayscale.min.css" rel="stylesheet">
 
   	<!-- Added CSS -->
+    <link href="css/slides.css" rel="stylesheet">
   	<link href="css/index.css" rel="stylesheet">
-  	<link href="css/slides.css" rel="stylesheet">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -79,8 +80,9 @@
                 <div class="row row-spacing">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">See3D</h1>
-                        <p class="intro-text">A community-driven effort to bring
+                        <p class="intro-text longText">A community-driven effort to bring
                           3D printed models into the hands of the blind and low vision.</p>
+                        <p class="intro-text smallText">A community effort to bring 3D models into the hands of the blind.</p>
                     </div>
 					<div class="slideshow-container">
 						<div class="mySlides">
@@ -166,7 +168,7 @@
 
 						<br>
 						<br>
-						<div style="text-align:center">
+						<div style="text-align:center" class="dotContainer">
 							<span class="dot" onclick="currentSlide(1)"></span>
 							<span class="dot" onclick="currentSlide(2)"></span>
 							<span class="dot" onclick="currentSlide(3)"></span>
@@ -176,7 +178,6 @@
 							<span class="dot" onclick="currentSlide(7)"></span>
 						</div>
 						<div class="article-padding"></div>
-						<hr>
 					</div>
                 </div>
             </div>
@@ -188,18 +189,22 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About Our Project</h2>
-                <p>See3D is designed to connect people who enjoy 3D printing with their visually impaired neighbors.
+                <p>
+                  See3D is designed to connect people who enjoy 3D printing with their visually impaired neighbors.
+                </p>
+                <p class="longText">
                   Low vision and blind individuals can request models to give new meaning to words that some students have never been able to understand.
+                </p>
+                <p>
                   Our mission at See3D is to not only distribute these models, but is also push forward the education for blind individuals.
                   If you would like to support our mission, you can donate to our GoFundMe
                   <a href="https://www.gofundme.com/see3d"> Here</a>.
                 </p>
-                <p>We hope to make See3D a go-to resource for the visually impaired everywhere.</p>
+                <p class="longText">We hope to make See3D a go-to resource for the visually impaired everywhere.</p>
                 <div class="button-box">
-                  <a href="https://www.gofundme.com/see3d" class="btn btn-default btn-lg" id="goFundMe" onclick="unFocus('goFundMe')">More About Us</a>
+                  <a href="https://www.gofundme.com/see3d" class="btn btn-default btn-lg" id="goFundMe" onclick="unFocus('goFundMe')">About</a>
                 </div>
-				<div class="article-padding"></div>
-                <hr>
+				        <div class="article-padding longText"></div>
             </div>
         </div>
     </section>
@@ -216,26 +221,24 @@
                       <a href="mailto:info@see3d.org">info@see3d.org</a>.
                       We greatly appreciate all the help we can get.
                     </p>
-          					<div class="article-padding"></div>
-          					<hr>
+          					<div class="article-padding longText"></div>
       				    </div>
             </div>
         <!-- </div> -->
     </section>
 
-    <section id="model-request" class="container content-section text-center reset-top-padding">
+    <section id="model-request" class="container content-section text-center section-padding-change">
           <div class="row">
               <div class="col-lg-8 col-lg-offset-2">
-                  <div class="article-padding"></div>
+                <div class="article-padding longText"></div>
                   <h2>Request a Model Today</h2>
                   <p>If you have previously requested a model, we ask that you only request a maximum of one model per week. Model requests that are suspected to be non-legitmate are subject to be cancelled.</p>
-                  <p>If you would like to request a model today, follow the links below to start the process of requesting a model.</p>
+                  <p class="longText">If you would like to request a model today, follow the link below to start the process of requesting a model.</p>
         					<div class="button-box">
         						<a href="https://goo.gl/forms/utZh2VDY9EFYiwu32" target="_blank" class="btn btn-default btn-lg" id="requestButton" onclick="unFocus('requestButton')">Request a Model</a>
         					</div>
-  					      <div class="article-padding"></div>
-                  <hr>
-              </div>
+  					      <div class="article-padding longText"></div>
+                  </div>
           </div>
       </section>
 
@@ -245,8 +248,14 @@
             <div class="col-lg-8 col-lg-offset-2">
               <h2>Impact and News</h2>
               <p>Check out some articles that spotlight See3D.</p>
-
-              <a href="https://blindabilities.com/?p=2957" target="_blank"
+              <table class="articleTable">
+                <tr>
+                  <th><a class="impactLink" href="https://blindabilities.com/?p=2957">Blind Abilities</a></th>
+                  <th><a class="impactLink" href="http://www.afb.org/afbpress/pubnew.asp/?DocID=aw180906">AccessWorld</a></th>
+                  <th><a class="impactLink" href="https://www.summitcds.org/communications/news/1171378/summit-juniors-project-earns-ge-grant-for-3d-printers-for-school">Summit District</a></th>
+                </tr>
+              </table>
+              <!-- <a href="https://blindabilities.com/?p=2957" target="_blank"
                 class="btn btn-default btn-lg first-article-spacing" id="blindAbil"
                 onclick="unFocus('blindAbil')">Blind Abilities</a>
 				      <a href="http://www.afb.org/afbpress/pubnew.asp/?DocID=aw180906"
@@ -255,14 +264,12 @@
 			        <a href="https://www.summitcds.org/communications/news/1171378/summit-juniors-project-earns-ge-grant-for-3d-printers-for-school"
                 target="_blank" class="btn btn-default btn-lg article-spacing" id="summitDistrict"
                 onclick="unFocus('summitDistrict')">Summit District</a>
-      				<!--
       				<a href="www.local.cincinnati.com/share/story/246508" class="btn btn-default btn-lg"
                 id="cincinnatiLocal" onclick="unFocus('cincinnatiLocal')">Cincinnati local story</a><hr>
               TODO find new article link
       				-->
-      				<div class="article-padding"></div>
-      				<hr>
-			     </div>
+      				<div class="article-padding longText"></div>
+      				</div>
         </div>
     </section>
 

@@ -5,6 +5,87 @@
 
 */
 
+@media (min-width: 1463px) {
+	body{
+		zoom: 1.2;
+	  -moz-transform: scale(1.2);
+	  -moz-transform-origin: 0 0;
+	}
+}
+
+@media (max-width: 991px) {
+	.slideshow-container{
+		height: 550px;
+	}
+	.prev, .next {
+		top: 25%;
+	}
+	.row {
+		margin-right: 0;
+	}
+	body {
+		overflow-x: hidden;
+	}
+	.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+		line-height: 1.2;
+	}
+	.col-lg-8 {
+		padding-right: 32px;
+		padding-left: 12px;
+	}
+	hr {
+		width: 100%;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.container {
+		width: 750px;
+	}
+}
+
+@media (min-width: 902px) {
+	.longText {
+		display: block;
+	}
+
+	.smallText {
+		display: none;
+	}
+}
+
+@media (max-width: 902px) {
+	.intro {
+		padding: 0px;
+	}
+
+	.intro .intro-body .brand-heading {
+		font-size: 60px;
+	}
+
+	.slideshow-container {
+		display: none;
+	}
+
+	.longText {
+		display: none;
+	}
+
+	.smallText {
+		display: block;
+	}
+
+	body {
+		padding-left: 35px;
+	}
+}
+
+.btn-default{
+	position: relative;
+	right: 20%;
+	float: right;
+}
+
 .article-spacing {
 	margin-left: 20px;
 }
@@ -14,14 +95,19 @@
 }
 
 .article-padding {
-	width: 400px;
+	width: 100%;
 	height: 50px;
 }
 
 .button-box {
-	width: 400px;
+	width: 100%;
 	height: 75px;
-	margin-left: 100px;
+	margin-right: 0%;
+	margin-left: auto;
+}
+
+h1 {
+	text-transform: none;
 }
 
 .section-padding-change {
@@ -52,6 +138,21 @@
 
 a:hover {
 	color: white;
+}
+
+a:focus {
+	color: #7cc8ff;
+}
+
+.impactLink {
+	padding: 10px;
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.articleTable {
+	width: 100%;
 }
 
 .reset-this {
