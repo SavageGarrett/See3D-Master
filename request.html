@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>About See3D</title>
+    <title>See3D</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -25,6 +25,7 @@
   	<!-- Added CSS -->
   	<link href="css/index.css" rel="stylesheet">
   	<link href="css/slides.css" rel="stylesheet">
+    <link href="css/request.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -60,12 +61,15 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+                    <!-- About Header Button -->
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
+                    <!-- Volunteer Header Button -->
                     <li>
                         <a class="page-scroll" href="#volunteer">Volunteer</a>
                     </li>
+                    <!-- Impact Header Button -->
                     <li>
                         <a class="page-scroll" href="#impact">Impact</a>
                     </li>
@@ -82,41 +86,97 @@
             <div class="container">
                 <div class="row row-spacing">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">See3D</h1>
+                        <h1 class="brand-heading transform-reset">See3D</h1>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
+  <!-- Model Request -->
 	<section id="model-request" class="container content-section text-center reset-top-padding">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Request a Model Today</h2>
+                <!-- Model Request Text -->
+                <h2 class="transform-reset">Request a Model Today</h2>
+                <h4 class="transform-reset">Click <a href="#">here</a> for instructions and information on requesting a model.</h4>
+
+                <!-- Order Name Field -->
                 <div class="form-group">
-                  <label for="usr"><h5 style="margin: 0">Name of model</h5></label>
-                  <input type="text" class="form-control" placeholder="Name..." id="usr">
+                  <label for="usr"><h5 style="margin: 0">Name</h5></label>
+                  <input type="text" class="form-control" placeholder="John Doe" id="usr">
                 </div>
+                <!-- Order E-Mail Field -->
                 <div class="form-group">
-                  <label for="numModels"><h5 style="margin: 0">Number of Models</h5></label>
-                  <input type="text" class="form-control" placeholder="1 - 3"  id="numModels">
+                  <label for="email"><h5 style="margin: 0">E-Mail</h5></label>
+                  <input type="email" class="form-control" placeholder="user@example.com" id="email">
                 </div>
+                <!-- Order Address Field -->
                 <div class="form-group">
-                  <label for="stlUpload"><h5 style="margin: 0">Stl File (optional)</h5></label>
+                  <label for="address"><h5 style="margin: 0">Address</h5></label>
+
+                  <!-- Address Line 1 Field -->
+                  <div class="line-box">
+                    <a class="address-label">Address Line 1</a><input type="text" class="form-control line-change" placeholder="Address Line 1" id="address1">
+                  </div>
+
+                  <!-- Address Line 2 Field -->
+                  <div class="line-box" style="margin-top: 10px;">
+                    <a class="address-label">Address Line 2</a><input type="text" class="form-control line-change" placeholder="Address Line 2" id="address2">
+                  </div>
+
+                  <!-- City Field -->
+                  <div class="line-box" style="margin-top: 10px;">
+                    <a class="address-label">City</a><input type="text" class="form-control line-change" placeholder="City">
+                  </div>
+
+                  <!-- State Field -->
+                  <div class="line-box" style="margin-top: 10px;">
+                    <a class="address-label">State</a><input type="text" class="form-control line-change" placeholder="State">
+                  </div>
+
+                  <!-- Zip Code Field -->
+                  <div class="line-box" style="margin-top: 10px;">
+                    <a class="address-label">Zip Code</a><input type="text" class="form-control line-change" placeholder="Zip Code">
+                  </div>
+
+                  <!-- Braille Address Label -->
+                  <div class="line-box" style="margin-top: 10px;">
+                    <a class="address-label">Braille Address Label</a><input type="checkbox" class="form-control checkbox-change">
+                  </div>
+                </div>
+
+                <!-- STL File Field -->
+                <div class="form-group">
+                  <label for="stlUpload"><h5 style="margin: 0;">Stl File (optional)</h5></label>
                   <input type="file" class="form-control" id="stlUpload">
                 </div>
+
+                <!-- Model Size Field -->
                 <div class="form-group">
-                  <label for="modelSize"><h5 style="margin: 0">Desired Model Size (in.)</h5></label>
+                  <label for="modelSize"><h5 style="margin: 0;">Desired Model Size (in.)</h5></label>
                   <input type="text" class="form-control" placeholder="3 - 7" id="modelSize"></input>
                 </div>
+
+                <!-- Considerations Field -->
                 <div class="form-group">
-                  <label for="considerations"><h5 style="margin: 0">Do you need any special considerations?</h5></label>
+                  <label for="considerations"><h5 style="margin: 0;">Do you need any special considerations?</h5></label>
                   <input type="text" class="form-control" placeholder="Details..." id="considerations"></input>
                 </div>
+
+                <!-- Understand Field -->
                 <div class="form-group">
-                  <label for="understand"><h5 style="margin: 0">What part of this object are you trying to better understand?</h5></label>
+                  <label for="understand"><h5 style="margin: 0;">What part of this object are you trying to better understand?</h5></label>
                   <input type="text" class="form-control" placeholder="Details..." id="understand"></input>
                 </div>
+
+                <!-- Publicity Field -->
+                <div class="form-group">
+                  <label for="publicity"><h5 style="margin: 0;">How did you hear about See3D?</h5></label>
+                  <input type="text" class="form-control" placeholder="Details..." id="publicity"></input>
+                </div>
+
+                <!-- Submit Button -->
                 <div class="button-box">
 				              <a href="#" class="btn btn-default btn-lg">Submit</a>
 					      </div>

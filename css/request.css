@@ -1,0 +1,28 @@
+.address-label: hover {
+  color: white;
+}
+
+.address-label {
+  color: white;
+  position: relative;
+  top: 5px;
+}
+
+.line-box {
+  height: 34px;
+}
+
+.line-change {
+  width: 85%;
+  float: right;
+}
+
+.checkbox-change {
+  width: 20px;
+  float: right;
+  margin-right: 70% !important;
+}
+
+input::selection{
+  background: black;
+}

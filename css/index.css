@@ -106,7 +106,8 @@
 	margin-left: auto;
 }
 
-h1 {
+.transform-reset,
+label h5 {
 	text-transform: none;
 }
 
